@@ -44,14 +44,14 @@ const routes = (handler) => ([
       auth: 'forum_app_jwt',
     },
   },
-  {
-    method: 'PUT',
-    path: '/threads/{threadId}/comments/{commentId}/likes',
-    handler: handler.putLikeCommentHandler,
-    options: {
-      auth: 'forum_app_jwt',
-    },
-  },
+  // {
+  //   method: 'PUT',
+  //   path: '/threads/{threadId}/comments/{commentId}/likes',
+  //   handler: handler.putLikeCommentHandler,
+  //   options: {
+  //     auth: 'forum_app_jwt',
+  //   },
+  // },
 ]);
 
 module.exports = routes;
